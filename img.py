@@ -12,8 +12,7 @@ def initialize_model():
 def generate_content(model, image_path, prompts):
     image_part = {
         "mime_type": "image/jpeg",
-        "data": image_path.read_bytes()
-    }
+        "data": image_path.read_bytes() }
     results = []
     for prompt_text in prompts:
         prompt_parts = [prompt_text, image_part]
